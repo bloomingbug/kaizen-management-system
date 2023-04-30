@@ -1,0 +1,59 @@
+{
+  "hash": "a8548943",
+  "browserHash": "6718168c",
+  "optimized": {
+    "vue": {
+      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "59683086",
+      "needsInterop": false
+    },
+    "@inertiajs/vue3": {
+      "src": "../../node_modules/@inertiajs/vue3/dist/index.esm.js",
+      "file": "@inertiajs_vue3.js",
+      "fileHash": "bcf9f01c",
+      "needsInterop": false
+    },
+    "laravel-vite-plugin/inertia-helpers": {
+      "src": "../../node_modules/laravel-vite-plugin/inertia-helpers/index.js",
+      "file": "laravel-vite-plugin_inertia-helpers.js",
+      "fileHash": "76b250c5",
+      "needsInterop": false
+    },
+    "vue-simple-context-menu": {
+      "src": "../../node_modules/vue-simple-context-menu/dist/vue-simple-context-menu.esm.js",
+      "file": "vue-simple-context-menu.js",
+      "fileHash": "8263034d",
+      "needsInterop": false
+    },
+    "vue3-toastify": {
+      "src": "../../node_modules/vue3-toastify/dist/esm/index.js",
+      "file": "vue3-toastify.js",
+      "fileHash": "e3ddf958",
+      "needsInterop": false
+    },
+    "lodash": {
+      "src": "../../node_modules/lodash/lodash.js",
+      "file": "lodash.js",
+      "fileHash": "a8e0bf51",
+      "needsInterop": true
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "585a47d9",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-YZFR4XBS": {
+      "file": "chunk-YZFR4XBS.js"
+    },
+    "chunk-GVU2GP2R": {
+      "file": "chunk-GVU2GP2R.js"
+    },
+    "chunk-DFKQJ226": {
+      "file": "chunk-DFKQJ226.js"
+    }
+  }
+}

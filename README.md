@@ -61,15 +61,19 @@ php artisan key:generate
 untuk menghasilkan application key yang diperlukan
 8. Jalankan perintah 
 ```
+php artisan storage:link
+```
+9. Jalankan perintah 
+```
 php artisan migrate --seed
 ```
 untuk menjalankan migrasi database dan menambahkan data awal. Kamu bisa merubah data awal pada file database/seeders/
-9. Jalankan perintah 
+10. Jalankan perintah 
 ```
 php artisan serve
 ```
 untuk menjalankan aplikasi pada http://localhost:8000/
-10. Jalankan perintah
+11. Jalankan perintah
 ```
 npm run dev 
 // atau
