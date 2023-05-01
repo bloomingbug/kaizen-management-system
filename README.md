@@ -1,4 +1,4 @@
-# Nama Aplikasi: Kaizen Management System
+# Kaizen Management System
 
 ## 📑 Deskripsi
 
