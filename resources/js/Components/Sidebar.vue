@@ -81,8 +81,14 @@
             </div>
             <div class="sidebar-menu">
                 <ul class="menu">
-                    <li class="sidebar-title">Menu</li>
                     <li
+                        v-if="hasAnyPermission(['dashboard.index'])"
+                        class="sidebar-title"
+                    >
+                        Menu
+                    </li>
+                    <li
+                        v-if="hasAnyPermission(['dashboard.index'])"
                         class="sidebar-item"
                         :class="{
                             active: $page.url.startsWith('/admin/dashboard'),
@@ -94,8 +100,14 @@
                         </Link>
                     </li>
 
-                    <li class="sidebar-title">Data</li>
                     <li
+                        v-if="hasAnyPermission(['kaizen.index'])"
+                        class="sidebar-title"
+                    >
+                        Data
+                    </li>
+                    <li
+                        v-if="hasAnyPermission(['kaizen.index'])"
                         class="sidebar-item"
                         :class="{
                             active: $page.url.startsWith('/admin/kaizens'),
@@ -107,8 +119,20 @@
                         </Link>
                     </li>
 
-                    <li class="sidebar-title">Master</li>
                     <li
+                        v-if="
+                            hasAnyPermission(['permission.index']) ||
+                            hasAnyPermission(['role.index']) ||
+                            hasAnyPermission(['user.index']) ||
+                            hasAnyPermission(['departement.index']) ||
+                            hasAnyPermission(['category.index'])
+                        "
+                        class="sidebar-title"
+                    >
+                        Master
+                    </li>
+                    <li
+                        v-if="hasAnyPermission(['permission.index'])"
                         class="sidebar-item"
                         :class="{
                             active: $page.url.startsWith('/admin/permissions'),
@@ -120,6 +144,7 @@
                         </Link>
                     </li>
                     <li
+                        v-if="hasAnyPermission(['role.index'])"
                         class="sidebar-item"
                         :class="{
                             active: $page.url.startsWith('/admin/roles'),
@@ -131,6 +156,7 @@
                         </Link>
                     </li>
                     <li
+                        v-if="hasAnyPermission(['user.index'])"
                         class="sidebar-item"
                         :class="{
                             active: $page.url.startsWith('/admin/users'),
@@ -142,6 +168,7 @@
                         </Link>
                     </li>
                     <li
+                        v-if="hasAnyPermission(['departement.index'])"
                         class="sidebar-item"
                         :class="{
                             active: $page.url.startsWith('/admin/departements'),
@@ -153,6 +180,7 @@
                         </Link>
                     </li>
                     <li
+                        v-if="hasAnyPermission(['category.index'])"
                         class="sidebar-item"
                         :class="{
                             active: $page.url.startsWith('/admin/categories'),
@@ -164,8 +192,14 @@
                         </Link>
                     </li>
 
-                    <li class="sidebar-title">Logging</li>
                     <li
+                        v-if="hasAnyPermission(['app.log'])"
+                        class="sidebar-title"
+                    >
+                        Logging
+                    </li>
+                    <li
+                        v-if="hasAnyPermission(['app.log'])"
                         class="sidebar-item"
                         :class="{
                             active: $page.url.startsWith('/admin/log'),
