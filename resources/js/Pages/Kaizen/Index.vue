@@ -37,7 +37,10 @@
                                     Search
                                 </button>
                             </div>
-                            <div v-if="kaizens.data.length > 0">
+                            <div
+                                v-if="kaizens.data.length > 0"
+                                class="table-responsive"
+                            >
                                 <table class="table table-hover mb-0 table-lg">
                                     <thead>
                                         <tr>
