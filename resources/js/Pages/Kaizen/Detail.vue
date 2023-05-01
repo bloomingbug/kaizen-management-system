@@ -8,7 +8,7 @@
         <div class="container overflow-hidden">
             <div class="row">
                 <div class="col-12 offset-md-2 col-md-8">
-                    <div v-if="session.flash" class="text-center">
+                    <div v-if="session.success" class="text-center">
                         <img
                             src="/assets/icons/check.svg"
                             height="100"
@@ -231,6 +231,7 @@ export default {
 
     props: {
         kaizen: Object,
+        session: Object,
     },
 
     components: {

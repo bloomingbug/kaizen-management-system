@@ -7,7 +7,6 @@ use Inertia\Inertia;
 use App\Models\Kaizen;
 use App\Models\Status;
 use App\Models\Category;
-use Barryvdh\DomPDF\Facade\PDF;
 use App\Models\Signature;
 use App\Models\Departement;
 use Illuminate\Http\Request;
@@ -15,6 +14,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
+use \PDF;
 
 class KaizenController extends Controller
 {
